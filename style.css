@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Benne', serif;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+#root {
+    max-width: 1300px;
+    margin: auto;
+}
+
+#add-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem 3rem;
+    margin: auto;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgba(107, 107, 167, 0.8);
+}
+
+#add-product div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+}
+
+#add-product div input {
+    width: 50%;
+    padding: .3rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#add-product div label {
+    width: 25%;
+    font-size: 1.2rem;
+}
+
+#add-product  > input:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100px;
+    padding: .8rem;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+#add-product  > input:last-child:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#phones {
+    margin: 3rem 0;
+    padding: 0 1.2rem;
+}
+
+#product-list {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    margin: 1rem 0;
+    background-color: rgba(107, 107, 167, 0.8);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.product i {
+    position: relative;
+    right: 20px;
+    top: -30px;
+    cursor: pointer;
+}
+
+.product p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.product div:first-child {
+    padding: 0 1.2rem;
+    width: 30%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    margin: 3rem 0;
+}
+
+.buttons button {
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.buttons button:hover {
+    background-color: rgba(107, 107, 167, 0.8);
+    color: #333;
+    font-weight: bold;
+}
+
+.error {
+    background-color: rgb(184, 49, 49);
+    color: #fff;
+    font-weight: bold;
+    padding: .5rem;
+    width: 30%;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
